@@ -11,7 +11,6 @@ const Section = () => {
     let {data}  = await axios.get(
       "https://api.itbook.store/1.0/search/mongodb/")
     setLoading(false);
-
     setBooks(data.books)
   }
   useEffect(()=> {
